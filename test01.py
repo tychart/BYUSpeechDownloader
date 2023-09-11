@@ -7,6 +7,7 @@ YEAR_PARSE_REGEX = "(^\d{4}\s|\s\d{4}\s|\s\d{4}$)"
 filename_test = '3244 d2343 lkldh 3245 s;fahdlk 324 hkl;341hjkl; 214 khl21;h2132421 20163 dskfl d3445'
 
 
+
 def parse_year(input_str):
     out_str = re.search(YEAR_PARSE_REGEX, input_str)
     if not isinstance(out_str, type(None)):
