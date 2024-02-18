@@ -1,4 +1,7 @@
-colorama==0.4.4
-mutagen==1.45.1
-PySimpleGUI==4.40.0
-tqdm==4.60.0
+beautifulsoup4==4.12.3
+bs4==0.0.2
+mutagen==1.47.0
+requests==2.31.0
+soupsieve==2.5
+urllib3==2.2.1
+customtkinter==5.2.2
