@@ -1,6 +1,15 @@
 """
-Script to download LDS General Conference MP3s, creating playlists for each conference, speaker and topic
+Script to download all BYU speeches by speaker, in alphabetical order by last name
 """
+
+import pathlib
+import os
+import requests
+import shutil
+import urllib.request
+import re
+from bs4 import BeautifulSoup
+from mutagen.id3 import ID3, TPE1, TIT2, TDRC, TALB, APIC, ID3NoHeaderError
 
 # import argparse
 # import base64
@@ -8,19 +17,9 @@ Script to download LDS General Conference MP3s, creating playlists for each conf
 # import glob
 # import io
 # import json
-
-import pathlib
-# import re
 # import shutil
 # import sys
 # import threading
-import os
-import requests
-import shutil
-import urllib.request
-import re
-
-# import colorama
 # from collections import defaultdict
 # from collections import namedtuple
 # import html as html_tools
@@ -32,8 +31,7 @@ import re
 # import urllib.request
 # import zlib
 # from mutagen.mp3 import MP3
-from bs4 import BeautifulSoup
-from mutagen.id3 import ID3, TPE1, TIT2, TDRC, TALB, APIC, ID3NoHeaderError
+
 
 name_of_root_folder = "BYU Speeches"
 
